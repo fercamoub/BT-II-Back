@@ -11,6 +11,7 @@ public class SpotifyConfig {
     private String redirectUri;
     private String authorizationUri;
     private String tokenUri;
+    private String apiBaseUri;
     private String scope;
 
     public String getClientId() {
@@ -44,17 +45,21 @@ public class SpotifyConfig {
     public String getTokenUri() {
         return tokenUri;
     }
-
     public void setTokenUri(String tokenUri) {
         this.tokenUri = tokenUri;
+    }
+
+    public String getApiBaseUri() {
+        return apiBaseUri;
+    }
+    public void setApiBaseUri(String apiBaseUri) {
+        this.apiBaseUri = apiBaseUri;
     }
 
     public String getScope() {
         return scope;
     }
-
     public void setScope(String scope) {
         this.scope = scope;
     }
 }
-
